@@ -1,16 +1,5 @@
 # flutter_local_storage
 
-A new Flutter project.
+A flutter project to handle local data storing.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project provides a centralized singleton class for storing and retrieving data locally using Shared Preferences. It uses generic methods to support a variety of data types, and global keys to ensure consistency across the application.
