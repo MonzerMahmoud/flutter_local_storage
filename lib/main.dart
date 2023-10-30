@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_storage/shared_preferences_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -64,7 +65,13 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
+      var sharedPreferences = SharedPreferencesService.getInstance().then((value) {
+        print('counter before increment: $_counter');
       _counter++;
+      print('counter after increment: $_counter');
+      value.counter = _counter;
+      print('counter from shared pref: ${value.counter}');
+      });
     });
   }
 
