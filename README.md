@@ -1,4 +1,4 @@
-# flutter_local_storage
+# Flutter Local Storage
 
 A flutter project to handle local data storing.
 
